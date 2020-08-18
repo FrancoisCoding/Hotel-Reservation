@@ -3,8 +3,15 @@ import Hero from "../Hero/Hero";
 import Banner from "../Banner/Banner";
 import { Link } from "react-router-dom";
 import Services from "./Services";
+import { useSelector } from "react-redux";
+import FeaturedRooms from "../Rooms/FeaturedRooms";
 
 const Home = () => {
+  const state = useSelector((state) => state);
+  const rooms = state.hotel.rooms;
+  const sortedRooms = state.hotel.sortedRooms;
+  const featuredRooms = state.hotel.featuredRooms;
+  console.log(rooms, sortedRooms, featuredRooms);
   return (
     <>
       <Hero>
@@ -18,6 +25,7 @@ const Home = () => {
         </Banner>
       </Hero>
       <Services />
+      <FeaturedRooms />
     </>
   );
 };
