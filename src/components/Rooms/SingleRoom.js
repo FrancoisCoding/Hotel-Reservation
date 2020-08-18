@@ -4,6 +4,7 @@ import defaultBcg from "../../images/room-1.jpeg";
 import { useSelector } from "react-redux";
 import Hero from "../Hero/Hero";
 import Banner from "../Banner/Banner";
+import StyledHero from "../Hero/StyledHero";
 
 const SingleRoom = ({ match }) => {
   const state = useSelector((state) => state);
@@ -41,13 +42,13 @@ const SingleRoom = ({ match }) => {
     images,
   } = room.fields;
   return (
-    <Hero hero="roomsHero">
+    <StyledHero img={images[0].fields.file.url || defaultBcg}>
       <Banner title={`${name} room`}>
         <Link to="/rooms" className="btn-primary">
           back to rooms
         </Link>
       </Banner>
-    </Hero>
+    </StyledHero>
   );
 };
 
