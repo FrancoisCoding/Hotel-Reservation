@@ -29,7 +29,7 @@ const RoomsFilter = () => {
     rooms,
   } = state.hotel;
 
-  console.log("BREAKFAST", breakfast);
+  console.log("STATE ROOMS", state.hotel);
 
   const handleChange = (event) => {
     const target = event.target;

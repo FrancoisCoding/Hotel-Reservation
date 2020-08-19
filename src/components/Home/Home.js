@@ -3,7 +3,6 @@ import Hero from "../Hero/Hero";
 import Banner from "../Banner/Banner";
 import { Link } from "react-router-dom";
 import Services from "./Services";
-import { useSelector } from "react-redux";
 import FeaturedRooms from "../Rooms/FeaturedRooms";
 
 const Home = () => {

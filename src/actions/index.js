@@ -1,8 +1,6 @@
 import axios from "axios";
 import * as actionTypes from "./types";
 
-const apiUrl = process.env.REACT_APP_API_URL;
-
 /* Update Filter Actions */
 export const updateFilterType = (type) => (dispatch) => {
   dispatch({ type: actionTypes.UPDATE_FILTER_TYPE, payload: type });
@@ -33,6 +31,21 @@ export const updateFilterPets = (pets) => (dispatch) => {
 };
 
 /* Room Actions */
+export const initializeRooms = (rooms) => (dispatch) => {
+  dispatch({ type: actionTypes.INITIALIZE_ROOMS_SUCCESS, payload: rooms });
+};
+export const initializeFeaturedRooms = () => (dispatch) => {
+  dispatch({ type: actionTypes.INITIALIZE_FEATURED_ROOMS });
+};
+export const initializeMaxPrice = () => (dispatch) => {
+  dispatch({ type: actionTypes.INITIALIZE_MAX_PRICE });
+};
+export const initializeMaxSize = () => (dispatch) => {
+  dispatch({ type: actionTypes.INITIALIZE_MAX_SIZE });
+};
+export const initializePrice = () => (dispatch) => {
+  dispatch({ type: actionTypes.INITIALIZE_PRICE });
+};
 export const updateSortedRooms = (rooms) => (dispatch) => {
   dispatch({ type: actionTypes.UPDATE_SORTED_ROOMS, payload: rooms });
 };

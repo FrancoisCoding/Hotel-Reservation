@@ -8,25 +8,25 @@ const Services = () => {
       icon: <FaCocktail />,
       title: "Free Cocktails",
       info:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "If you are looking for a place to enjoy the most innovative cocktails in Beach Resort, you are in luck, because we renewed our cocktail menu with some explosive and unrivalled combinations. ",
     },
     {
       icon: <FaHiking />,
       title: "Endless Hiking",
       info:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Discover a captivating tropical paradise at Beach Resort. Overlooking the Caribbean sands of Palm Beach, our beautifully-styled hotel boasts spacious accommodations on the sunny beaches with exceptional resort amenities.",
     },
     {
       icon: <FaShuttleVan />,
       title: "Free Shuttle",
       info:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "The Beach Resort Shuttle makes getting around town easy and carefree.",
     },
     {
       icon: <FaBeer />,
       title: "Strongest Beer",
       info:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Our beers are crafted for a chosen few, a small cadre of renegades and rebels who enjoy a beer that pushes the limits of what is commonly accepted as taste.",
     },
   ]);
   return (
