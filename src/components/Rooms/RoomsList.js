@@ -6,7 +6,7 @@ const RoomsList = () => {
   const state = useSelector((state) => state);
   const { rooms, sortedRooms, featuredRooms } = state.hotel;
 
-  if (rooms.length === 0) {
+  if (sortedRooms.length === 0) {
     return (
       <div className="empty-search">
         <h3>unfortunately no rooms matched your search parameters</h3>
