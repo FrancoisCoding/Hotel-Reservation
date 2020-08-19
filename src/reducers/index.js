@@ -764,6 +764,8 @@ const rooms = [
 ];
 
 const featuredRooms = rooms.filter((room) => room.fields.featured === true);
+const maxPrice = Math.max(...rooms.map((item) => item.fields.price));
+const maxSize = Math.max(...rooms.map((item) => item.fields.size));
 
 const initialState = {
   rooms: [
@@ -1512,10 +1514,69 @@ const initialState = {
   sortedRooms: rooms,
   featuredRooms: featuredRooms,
   isLoading: false,
+  type: "all",
+  capacity: 1,
+  price: maxPrice,
+  minPrice: 0,
+  maxPrice: maxPrice,
+  minSize: 0,
+  maxSize: maxSize,
+  breakfast: false,
+  pets: false,
 };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
+    case actionTypes.UPDATE_FILTER_TYPE:
+      return {
+        ...state,
+        type: action.payload,
+      };
+    case actionTypes.UPDATE_FILTER_CAPACITY:
+      return {
+        ...state,
+        capacity: action.payload,
+      };
+    case actionTypes.UPDATE_FILTER_PRICE:
+      return {
+        ...state,
+        price: action.payload,
+      };
+    case actionTypes.UPDATE_FILTER_MIN_PRICE:
+      return {
+        ...state,
+        minPrice: action.payload,
+      };
+    case actionTypes.UPDATE_FILTER_MAX_PRICE:
+      return {
+        ...state,
+        maxPrice: action.payload,
+      };
+    case actionTypes.UPDATE_FILTER_MIN_SIZE:
+      return {
+        ...state,
+        minSize: action.payload,
+      };
+    case actionTypes.UPDATE_FILTER_MAX_SIZE:
+      return {
+        ...state,
+        maxSize: action.payload,
+      };
+    case actionTypes.UPDATE_FILTER_BREAKFAST:
+      return {
+        ...state,
+        breakfast: action.payload,
+      };
+    case actionTypes.UPDATE_FILTER_PETS:
+      return {
+        ...state,
+        pets: action.payload,
+      };
+    case actionTypes.UPDATE_SORTED_ROOMS:
+      return {
+        ...state,
+        sortedRooms: action.payload,
+      };
     default:
       return state;
   }

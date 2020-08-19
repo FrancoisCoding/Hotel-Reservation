@@ -8,7 +8,7 @@ import StyledHero from "../Hero/StyledHero";
 
 const SingleRoom = ({ match }) => {
   const state = useSelector((state) => state);
-  const rooms = state.hotel.rooms;
+  const { rooms } = state.hotel;
   const slug = match.params.slug;
 
   const getRoom = (slug) => {
@@ -17,7 +17,6 @@ const SingleRoom = ({ match }) => {
   };
 
   const room = getRoom(slug);
-  console.log(room);
 
   if (!room) {
     return (

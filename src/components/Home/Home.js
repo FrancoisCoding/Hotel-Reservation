@@ -7,11 +7,6 @@ import { useSelector } from "react-redux";
 import FeaturedRooms from "../Rooms/FeaturedRooms";
 
 const Home = () => {
-  const state = useSelector((state) => state);
-  const rooms = state.hotel.rooms;
-  const sortedRooms = state.hotel.sortedRooms;
-  const featuredRooms = state.hotel.featuredRooms;
-  console.log(rooms, sortedRooms, featuredRooms);
   return (
     <>
       <Hero>

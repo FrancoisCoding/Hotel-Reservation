@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 
 const Room = ({ room }) => {
   const { name, slug, images, price } = room.fields;
-  console.log("Each Room", images);
   return (
     <article className="room">
       <div className="img-container">
