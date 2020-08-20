@@ -21,3 +21,7 @@ export const UPDATE_SORTED_ROOMS = "UPDATE_SORTED_ROOMS";
 
 /* Room Book Action Types */
 export const SET_BOOK_DAYS = "SET_BOOK_DAYS";
+
+/* Modal Action Types */
+export const SHOW_MODAL = "SHOW_MODAL";
+export const HIDE_MODAL = "HIDE_MODAL";

@@ -54,3 +54,11 @@ export const updateSortedRooms = (rooms) => (dispatch) => {
 export const setBookDays = (days) => (dispatch) => {
   dispatch({ type: actionTypes.SET_BOOK_DAYS, payload: days });
 };
+
+/* Modal Actions */
+export const showModal = () => (dispatch) => {
+  dispatch({ type: actionTypes.SHOW_MODAL });
+};
+export const hideModal = () => (dispatch) => {
+  dispatch({ type: actionTypes.HIDE_MODAL });
+};

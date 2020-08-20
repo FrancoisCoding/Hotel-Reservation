@@ -16,6 +16,7 @@ const initialState = {
   breakfast: false,
   pets: false,
   bookDays: 0,
+  isVisible: false,
 };
 
 // const maxPrice = Math.max(
@@ -106,6 +107,16 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         bookDays: action.payload,
+      };
+    case actionTypes.SHOW_MODAL:
+      return {
+        ...state,
+        isVisible: true,
+      };
+    case actionTypes.HIDE_MODAL:
+      return {
+        ...state,
+        isVisible: false,
       };
     default:
       return state;
