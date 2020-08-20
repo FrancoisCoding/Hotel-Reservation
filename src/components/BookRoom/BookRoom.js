@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import Title from "../Home/Title";
+import PaymentExample from "../Paypal/PaymentExample";
 
 const BookRoom = ({ match }) => {
   const [value, onChange] = useState(new Date());
@@ -32,6 +33,8 @@ const BookRoom = ({ match }) => {
         value={value}
         minDate={new Date()}
       />
+      <Title title="Online Payment" />
+      <PaymentExample amount={room ? room.fields.price : null} />
     </div>
   );
 };

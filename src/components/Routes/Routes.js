@@ -10,7 +10,6 @@ const Routes = ({ buttonClick }) => {
   return (
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route exact path="/book" component={BookRoom} />
       <Route exact path="/book/:slug" component={BookRoom} />
       <Route exact path="/rooms" component={Rooms} />
       <Route exact path="/rooms/:slug" component={SingleRoom} />

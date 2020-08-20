@@ -168,6 +168,10 @@ h6 {
   margin-right: 1rem;
 }
 
+.calendar {
+  margin-bottom: 3rem;
+}
+
 @media screen and (max-width: 442px) {
   .book-mr {
     margin-bottom: 1rem;
