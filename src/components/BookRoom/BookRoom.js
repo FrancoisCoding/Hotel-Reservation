@@ -46,7 +46,7 @@ const BookRoom = ({ match }) => {
       <Title title="Online Payment" />
       <PaymentExample
         amount={room ? room.fields.price : null}
-        showModal={showModal}
+        showModal={modalShow}
       />
       <Modal visible={state.hotel.isVisible} hideModal={modalHide} />
     </div>

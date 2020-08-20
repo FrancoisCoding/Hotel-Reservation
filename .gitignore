@@ -111,3 +111,9 @@ dist
 .vscode-test
 
 # End of https://www.toptal.com/developers/gitignore/api/node
+# Local Netlify folder
+.netlify
+
+.build
+build
+/build
