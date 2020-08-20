@@ -1,4 +1,4 @@
-# ![BookResort](https://i.imgur.com/5rzQNco.png)
+# ![BookResort](https://i.imgur.com/tyifVOs.png)
 # BookResort
 <table>
 <tr>
@@ -14,9 +14,6 @@ Here is a working live demo :  https://francois-beach-resort.netlify.app/
 
 
 ## Site
-
-### Landing Page
-![](https://i.imgur.com/tyifVOs.png)
 
 ### Rooms
 ![](https://i.imgur.com/WJbh1P1.png)
