@@ -155,11 +155,36 @@ h6 {
   }
 }
 /* end of navbar */
+
+/* book rooms */
+.book-container {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-mr {
+  margin-right: 1rem;
+}
+
+.calendar {
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 442px) {
+  .book-mr {
+    margin-bottom: 1rem;
+  }
+}
+
+/* end of book rooms */
+
 /* Hero */
 .defaultHero,
 .roomsHero {
   min-height: calc(100vh - 66px);
-  background: url("./images/defaultBcg.jpeg") center/cover no-repeat;
+  background: url("https://i.imgur.com/BIeBOrE.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -252,6 +277,7 @@ h6 {
 }
 .services h6 {
   letter-spacing: var(--mainSpacing);
+  text-transform: capitalize;
 }
 .services p {
   width: 80%;
@@ -331,6 +357,7 @@ h6 {
   font-weight: 300;
   letter-spacing: var(--mainSpacing);
 }
+
 .room-link {
   position: absolute;
   top: 50%;
@@ -338,6 +365,7 @@ h6 {
   transform: scale(0);
   transition: all 0.3s linear;
 }
+
 .img-container:hover {
   background: rgba(0, 0, 0, 0.8);
 }
