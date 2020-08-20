@@ -46,6 +46,9 @@ const SingleRoom = ({ match }) => {
     <>
       <StyledHero img={images[0].fields.file.url || defaultBcg}>
         <Banner title={`${name} room`}>
+          <Link to={`/book/${slug}`} className="btn-primary book-mr">
+            Book Room
+          </Link>
           <Link to="/rooms" className="btn-primary">
             back to rooms
           </Link>

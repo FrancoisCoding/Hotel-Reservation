@@ -155,6 +155,27 @@ h6 {
   }
 }
 /* end of navbar */
+
+/* book rooms */
+.book-container {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-mr {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 442px) {
+  .book-mr {
+    margin-bottom: 1rem;
+  }
+}
+
+/* end of book rooms */
+
 /* Hero */
 .defaultHero,
 .roomsHero {
@@ -332,6 +353,7 @@ h6 {
   font-weight: 300;
   letter-spacing: var(--mainSpacing);
 }
+
 .room-link {
   position: absolute;
   top: 50%;
@@ -339,6 +361,7 @@ h6 {
   transform: scale(0);
   transition: all 0.3s linear;
 }
+
 .img-container:hover {
   background: rgba(0, 0, 0, 0.8);
 }

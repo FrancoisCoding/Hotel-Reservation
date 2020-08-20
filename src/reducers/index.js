@@ -15,6 +15,7 @@ const initialState = {
   maxSize: 0,
   breakfast: false,
   pets: false,
+  bookDays: 0,
 };
 
 // const maxPrice = Math.max(
@@ -100,6 +101,11 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         sortedRooms: action.payload,
+      };
+    case actionTypes.SET_BOOK_DAYS:
+      return {
+        ...state,
+        bookDays: action.payload,
       };
     default:
       return state;

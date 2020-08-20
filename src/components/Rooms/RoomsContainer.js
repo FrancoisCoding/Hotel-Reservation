@@ -13,7 +13,6 @@ const RoomsContainer = () => {
   }
   return (
     <div>
-      <h1>Rooms Container</h1>
       <RoomsFilter />
       <RoomsList />
     </div>

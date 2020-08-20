@@ -49,3 +49,8 @@ export const initializePrice = () => (dispatch) => {
 export const updateSortedRooms = (rooms) => (dispatch) => {
   dispatch({ type: actionTypes.UPDATE_SORTED_ROOMS, payload: rooms });
 };
+
+/* Room Book Actions */
+export const setBookDays = (days) => (dispatch) => {
+  dispatch({ type: actionTypes.SET_BOOK_DAYS, payload: days });
+};
